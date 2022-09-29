@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  	<link rel="shortcut icon" href=".styles/Icons/favicon.svg" type="image/svg+xml">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Modal</title>
+</head>
+<body>
+	  <!--HTML AREA-->
+	
+	  <div class="modalpanel">
+		<div class="panel1">
+			<button class="modalbtn" onclick="panelopen()">Open Modal</button>
+		</div>
+		<div class="panel2" id="modalpanel">
+			<div class="modal">
+				<div class="info">
+					<span>Modal</span>
+					<button class="xico bx bx-x" onclick="panelclose()"></button>
+				</div>
+				<div class="modalpanel2">
+					<form>
+						<input type="text" class="textinput" placeholder="Name" id="name">
+						<input type="text" class="textinput" placeholder="Surname" id="surname">
+						<input type="button" value="Submit" onclick="btnfinish()" class="subinput" id="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <script src="styles/script.js"></script>
+</body>
+</html>
